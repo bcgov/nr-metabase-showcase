@@ -1,4 +1,9 @@
-# nr-metabase-showcase
+# Natural Resources Metabase Showcase [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![img](https://img.shields.io/badge/Lifecycle-Retired-d45500)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
+
+This repository is no longer maintained. Please visit [https://github.com/bcgov/nr-showcase-devops-tools/tree/master/tools/metabase](https://github.com/bcgov/nr-showcase-devops-tools/tree/master/tools/metabase) for maintained documentation on deploying and managing a Metabase instance on Openshift.
+
+---
+
 This repository includes 2 pieces that were used to set up a prrof-of-concept application that would display Metabase dashboards to authorized IDIR users.
 1. Instructions to manually set up and deploy a Metabase instance to an Openshift namespace and populate with data from a CSV or other source. This should be reconfigured to a proper pipeline if used an a live application.
 2. A Java-based web application that secures pages behind Keycloak logins and displays embedded Metabase dashboards (linked from the deployed Metabase instance above) in the web app. This application is referred to as the Metabase Viewer. There is no OpenShift pipeline provided for this proof-of-concept, but it can easily be quickly deployed to an OCP namespace with the OC new-app command and a Java S2i.
